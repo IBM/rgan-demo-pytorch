@@ -1,0 +1,9 @@
+name: rgan_pytorch
+dependencies:
+  - python=3.10.8
+  - jupyter=1.0.0
+  - numpy=1.23.5
+  - matplotlib=3.6.2
+  - seaborn=0.12.2
+  - pytorch::pytorch=1.13.1
+  - conda-forge::pytorch-lightning==1.9.3

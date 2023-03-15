@@ -1,4 +1,4 @@
-This repository provides pytorch source code for a demonstration associated with our _(DOI)_ preprint publication, "Parameter estimation of biological ensembles: generative models to solve Stochastic Inverse Problems".
+This repository provides pytorch source code for a demonstration associated with our _(DOI)_ preprint publication, "Parameter estimation for biological model ensembles with data-consistent inversion".
 
 Paper: [Arxiv Link](https://arxiv.org/)
 
@@ -12,14 +12,26 @@ A demonstration of the r-GAN that follows the example in section 3A of the manus
 
 # Python Environment 
 
-## Conda Create and Activate Environment
+## Conda Create and Activate Environment Manually
+
+Either install from environment file:
+```
+conda env create -f environment.yml
+conda activate rgan_pytorch
+```
+
+Or use requirements file with pip, or create manually:
+
+
+### Conda manual environment creation
+
 
 ```
 conda create --name rgan_pytorch python=3.10.8
 conda activate rgan_pytorch
 ```
 
-## Conda Install Packages
+### Conda Install Packages
 ```
 conda install jupyter==1.0.0 numpy==1.23.5 matplotlib==3.6.2 seaborn==0.12.2
 conda install pytorch==1.13.1 -c pytorch
