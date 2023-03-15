@@ -25,3 +25,13 @@ conda install jupyter==1.0.0 numpy==1.23.5 matplotlib==3.6.2 seaborn==0.12.2
 conda install pytorch==1.13.1 -c pytorch
 conda install pytorch-lightning==1.9.3 -c conda-forge 
 ```
+
+## Timings
+
+Approximate duration of demo stages (using 2018 MacBook Pro with 6 core i7 CPU)
+
+Environment install time: ~1 minute
+
+r-GAN Prior training stage: ~6 minutes
+
+r-GAN training stage: ~17 minutes
