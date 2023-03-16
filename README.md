@@ -1,6 +1,8 @@
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ibm/rgan-demo-pytorch/main?labpath=rgan_demo.ipynb)
+
 This repository provides pytorch source code for a demonstration associated with our _(DOI)_ preprint publication, "Parameter estimation for biological model ensembles with data-consistent inversion".
 
-Paper: [Arxiv Link](https://arxiv.org/)
+<!-- Paper: [Arxiv Link](https://arxiv.org/) -->
 
 # Regularized Generative Adversarial Network (r-GAN)
 
