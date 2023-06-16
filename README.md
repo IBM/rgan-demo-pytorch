@@ -10,7 +10,9 @@ This repository provides pytorch source code for a demonstration associated with
 
 ## Demo notebook
 
-A demonstration of the r-GAN that follows the example in section 3A of the manuscript (Figure 2A-G) can be found in [this notebook](test.ipynb).
+A demonstration of the r-GAN that follows the example in section 3A of the manuscript (Figure 2A-G) can be found in [this notebook](rgan_demo.ipynb).
+
+The MNIST super-resolution imaging example in section 3C of the manuscript (Figure 4) can be found in [this notebook](rgan_mnist_demo_full.ipynb) in the [examples/MNIST](examples/MNIST/) folder.
 
 # Python Environment 
 
@@ -49,3 +51,11 @@ Environment install time: ~1 minute
 r-GAN Prior training stage: ~6 minutes
 
 r-GAN training stage: ~17 minutes
+
+Approximate duration of MNIST demo stages (using a single NVIDIA V100 GPU (additional pytorch setup to use CUDA is required))
+
+Environment install time: ~1 minute
+
+r-GAN Prior training stage: ~15 minutes
+
+r-GAN training stage: ~30 minutes
