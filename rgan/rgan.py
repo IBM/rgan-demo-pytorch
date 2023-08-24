@@ -136,6 +136,7 @@ class rGAN(pl.LightningModule):
         # optimizing optimizer_G
         return [optimizer_G, optimizer_D_X, optimizer_D_Y], []
 
+
     def training_step(self, batch, batch_idx, optimizer_idx):
         data_x = batch['x']
         data_y = batch['y']
@@ -161,7 +162,7 @@ class rGAN(pl.LightningModule):
                 self.y_g = self.mm(self.x_g)
                 g_loss_y = g_criterion(self.D_Y(self.y_g))
             elif self.train_stage == 'prior':
-                g_loss_y = 0.0 # torch.zeros((1,))
+                g_loss_y = 0.0
                
             g_loss_r = r_criterion(z, self.R(self.x_g))
             
