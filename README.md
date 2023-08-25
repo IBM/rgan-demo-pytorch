@@ -1,6 +1,6 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ibm/rgan-demo-pytorch/main?labpath=rgan_demo.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ibm/rgan-demo-pytorch/stochastic?labpath=examples/nonlinear/uniform_prior.ipynb)
 
-This repository provides pytorch source code for a demonstration associated with our _(DOI)_ preprint publication, "Parameter estimation for biological model ensembles with data-consistent inversion".
+This repository provides pytorch source code for demonstrations associated with our _(DOI)_ preprint publication, "Novel and flexible parameter estimation methods for data-consistent inversion in mechanistic modeling".
 
 <!-- Paper: [Arxiv Link](https://arxiv.org/) -->
 
@@ -8,11 +8,18 @@ This repository provides pytorch source code for a demonstration associated with
 
 **r-GAN** is a generative model for solving a stochastic inverse problem (SIP). The goal is to generate a distribution of mechanistic model (MM) parameters that, when supplied as input to the MM to produce a distribution of MM outputs, matches a distribution of real observations in the MM output domain. 
 
-## Demo notebook
+## Demo notebooks
 
-A demonstration of the r-GAN that follows the example in section 3A of the manuscript (Figure 2A-G) can be found in [this notebook](rgan_demo.ipynb).
+Demonstrations that follow the examples in section 3 of the manuscript can be found in [examples](examples). For each example problem, we have provided solutions using r-GAN, modified rejection sampling (algorithm 2 in the manuscript), and c-GAN.
 
-The MNIST super-resolution imaging example in section 3C of the manuscript (Figure 4) can be found in [this notebook](rgan_mnist_demo_full.ipynb) in the [examples/MNIST](examples/MNIST/) folder.
+The included examples are:
+
+* [Nonlinear function, uniform prior](examples/nonlinear/uniform_prior.ipynb) (Figure 2A-G)
+* [Nonlinear function, beta prior](examples/nonlinear/beta_prior.ipynb) (Figure 2H-N)
+* ["Wobbly Plate", deterministic](examples/wobbly_plate/deterministic.ipynb) (Figure 3A-G)
+* ["Wobbly Plate", stochastic](examples/wobbly_plate/stochastic.ipynb) (Figure 3H-O)
+* [MNIST super-resolution imaging](examples/MNIST/rgan_mnist_demo_full.ipynb) (Figure 4)
+
 
 # Python Environment 
 
@@ -41,6 +48,8 @@ conda install jupyter==1.0.0 numpy==1.23.5 matplotlib==3.6.2 seaborn==0.12.2
 conda install pytorch==1.13.1 -c pytorch
 conda install pytorch-lightning==1.9.3 -c conda-forge 
 ```
+
+Additional package installation is required to enable CUDA.
 
 ## Timings
 
