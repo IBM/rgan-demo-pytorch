@@ -44,7 +44,7 @@ conda activate rgan_pytorch
 
 ### Conda Install Packages
 ```
-conda install jupyter==1.0.0 numpy==1.23.5 matplotlib==3.6.2 seaborn==0.12.2
+conda install jupyter==1.0.0 numpy==1.23.5 matplotlib==3.6.2 seaborn==0.12.2 scipy==1.11.1 scikit-learn==1.3.0
 conda install pytorch==1.13.1 -c pytorch
 conda install pytorch-lightning==1.9.3 -c conda-forge 
 ```
