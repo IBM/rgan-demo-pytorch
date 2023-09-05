@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ibm/rgan-demo-pytorch/stochastic?labpath=examples/nonlinear/uniform_prior.ipynb)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ibm/rgan-demo-pytorch/main?labpath=examples/nonlinear/uniform_prior.ipynb)
 
 This repository provides pytorch source code for demonstrations associated with our _(DOI)_ preprint publication, "Novel and flexible parameter estimation methods for data-consistent inversion in mechanistic modeling".
 
