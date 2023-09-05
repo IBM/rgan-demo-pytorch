@@ -1,0 +1,19 @@
+[build-system]
+# Minimum requirements for the build system to execute.
+requires = ["setuptools", "wheel"]  # PEP 508 specifications.
+
+[project]
+name = "rgan"
+version = "0.0.1"
+authors = [
+  { name="Tim Rumbell", email="thrumbel@us.ibm.com" },
+]
+description = "Demo examples for r-GAN"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3"
+]
+
+[tool.setuptools]
+py-modules = ["rgan"]
